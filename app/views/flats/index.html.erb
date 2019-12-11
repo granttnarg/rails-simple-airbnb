@@ -1,0 +1,18 @@
+<div class="heading">
+  <h1>All our flats</h1>
+</div>
+  <div class="container">
+    <div class="row">
+      <% @flats.each do |flat| %>
+      <div class="flat-outer">
+        <div class="flat">
+           <h2><%= flat.name%></h2>
+              <p><%= flat.address%></p>
+                <p><%= "#{flat.number_of_guests}ppl - #{flat.price_per_night}€"%></p>
+        </div>
+        <div class="more-info"> More Info</div>
+      </div>
+      <% end %>
+    </div>
+  </div>
+
